@@ -1,0 +1,94 @@
+.siege {
+    background-image: url('https://jeansebastienstuhec.devcolmar.xyz/Game-On/img_compressé/a_propos/lieu\ de\ l\'exterieur.jpg');
+    opacity: 0.6;
+    height: 906px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+}
+
+@media(max-width: 5682px) {
+    .siege {
+        background-size: cover;
+    }
+}
+
+.cyperpunk {
+    background-image: url('https://jeansebastienstuhec.devcolmar.xyz/Game-On/img_compressé/a_propos/cyberpunk-min.jpg');
+    opacity: 0.6;
+    height: 765px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+}
+
+@media(max-width: 5682px) {
+    .cyperpunk {
+        background-size: cover;
+    }
+}
+
+.RTX {
+    background-image: url('https://jeansebastienstuhec.devcolmar.xyz/Game-On/img_compressé/a_propos/8K-min.jpg');
+    opacity: 0.6;
+    height: 766px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+}
+
+@media(max-width: 5682px) {
+    .RTX {
+        background-size: cover;
+    }
+}
+
+.concours {
+    background-image: url('https://jeansebastienstuhec.devcolmar.xyz/Game-On/img_compressé/a_propos/warzone-min.jpg');
+    opacity: 0.6;
+    height: 766px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+    font-size: 28px;
+}
+
+@media(max-width: 5682px) {
+    .concours {
+        background-size: cover;
+    }
+}
+
+#siege {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    margin-top: -190px;
+}
+
+#jeux {
+    position: absolute;
+    font-size: 22px;
+    color: white;
+    margin-top: -500px;
+}
+
+#nvidia {
+    position: absolute;
+    font-size: 22px;
+    color: white;
+    margin-top: -500px;
+}
+
+#comp {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    margin-top: -500px
+}
+
+main .btn {
+    background-color: #1F272F;
+    color: white;
+    border-radius: 10px;
+}

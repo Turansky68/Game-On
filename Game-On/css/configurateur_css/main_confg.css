@@ -1,0 +1,180 @@
+    #prix_payer {
+        position: relative;
+        width: 367px;
+        height: 731px;
+        background-color: #1F272F;
+        border-radius: 25px;
+        margin-top: 50px;
+        margin-left: 25px;
+        margin-right: 150px;
+        max-width: 680px;
+    }
+    
+    #total {
+        position: relative;
+        display: flex;
+        width: 328px;
+        height: 163px;
+        background-color: white;
+        color: black;
+        border-radius: 25px;
+        margin: 25px;
+        max-width: 480px;
+    }
+    
+    #total h3 {
+        margin-top: 10px;
+        margin-left: 120px;
+    }
+    
+    #total p {
+        margin-top: 10px;
+        font-size: 16px;
+        margin-left: 120px;
+    }
+    
+    #stock {
+        width: 328px;
+        height: 255px;
+        background-color: white;
+        color: black;
+        border-radius: 25px;
+    }
+    
+    #stock span {
+        color: black;
+        margin-top: 35px;
+    }
+    
+    #stock i {
+        font-size: 30px;
+        margin-right: 20px;
+        margin-left: 15px;
+    }
+    
+    #livraison {
+        width: 328px;
+        height: 117px;
+        background-color: white;
+        border-radius: 25px;
+        margin-top: 25px;
+    }
+    
+    #ups {
+        color: black;
+        margin-top: -140px;
+    }
+    
+    input {
+        margin: .4rem;
+    }
+    
+    .btn-success {
+        margin-top: 10px;
+        border-radius: 15px;
+        text-align: center;
+    }
+    
+    #compo {
+        position: relative;
+        background-color: #1F272F;
+        width: 602px;
+        height: 1104px;
+        z-index: 0.1;
+        border-radius: 25px;
+        margin-left: 20px;
+        margin-top: 50px;
+        max-width: 650px;
+        margin-bottom: 50px;
+    }
+    
+    #partie {
+        position: absolute;
+        text-transform: uppercase;
+        z-index: 0.5;
+        margin-top: 10px;
+    }
+    
+    .btn-light {
+        text-transform: uppercase;
+        width: 523px;
+        height: 42px;
+    }
+    
+    .btn-warning {
+        width: 108px;
+        height: 42px;
+    }
+    
+    .dropdown-toggle-split {
+        width: 75px;
+    }
+    
+    .dropdown-item:hover {
+        background-color: #3c3c3c;
+        color: white;
+    }
+    
+    .btn-group {
+        margin: 15px 0px 15px 0px;
+    }
+    
+    @media screen and (max-width:640px) {
+        #ups {
+            margin-left: 90px;
+        }
+    }
+    
+    @media screen and (max-width:640px) {
+        #total h3 {
+            margin-left: 20px;
+        }
+        #total p {
+            margin-left: 30px;
+        }
+    }
+    @media screen and (min-width:1px){
+        #total h3{
+            margin-left: 10px;
+        }
+        #total p{
+            margin-left: -1px;
+        }
+    }
+    
+    @media screen and (max-width:640px) {
+        .dropdown-menu {
+            font-size: 15px;
+            margin-left: -200px;
+        }
+    }
+    
+    @media screen and (min-width:1315px) {
+        #livraison {
+            margin-left: 155px;
+        }
+    }
+    
+    @media screen and (min-width:1315px) {
+        #ups {
+            margin-top: -125px;
+            margin-right: 48px;
+        }
+    }
+    /* Partie pour le hover des images du configurateur*/
+    
+    ul li a img {
+        display: none;
+    }
+    
+    a:hover img {
+        display: inline;
+        position: absolute;
+        margin-left: 50px;
+        max-width: 500px;
+        max-height: 500px;
+    }
+    
+    .dropdown-toggle::after {
+        display: none;
+    }

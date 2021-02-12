@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<head>
+    <title>Game-on : Configurateur</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/svg" href="/img_compressé/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/configurateur_css/main_confg.css">
+    <link rel="stylesheet" href="./css/configurateur_css/style_3.css">
+    <link rel="shortcut icon" type="image/png" href="imgicon/icongameon.png"/>
+</head>
+
+
+
+
+<body>
+
+    <header>
+        <img src="img_compressé/logo-de-site4.png" width="20%" alt="logo de l'entreprise" id="logo_ent">
+        <img class="timlogo" src="img_compressé/game-on.png" width="50%" alt="logo de Game-on">
+        <div class="nav-modal">
+            <div class="blob"></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="A propos.html">A PROPOS</a></li>
+                    <li><a href="compétitions.html">COMPETITIONS</a></li>
+                    <li><a href="configurations.html">CONFIGURATION</a></li>
+                    <li><a href="configurateur.html">CONFIGURATEUR</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="Mentions Légales.html">MENTIONS LEGALES</a></li>
+                    <li><a href="plan du site.html">PLAN DU SITE</a></li>
+                    <li><a href="mon_compte.html">MON COMPTE</a></li>
+                    <li>
+                        <form class="searchbox">
+                            <input type="search" placeholder="Rechercher...." name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+                            <input type="submit" class="searchbox-submit">
+                            <span class="searchbox-icon"><i class="fas fa-search-plus" aria-hidden="true"></i></span>
+                        </form>
+                        </i>
+                        </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="head">
+            <a href="https://tinyurl.com/y4hy82cc" class="tile socialmedia"><i class="fab fa-instagram"></i></a>
+            <a href="https://tinyurl.com/y4qqtc3k" class="tile socialmedia"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div class="tile burger">
+            <div class="meat">
+                <div class="line one"></div>
+                <div class="line two"></div>
+                <div class="line three"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--Partie dédié au lecteur vidéo responsive-->
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/486703061?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="muted" allowfullscreen></iframe></div>
+        <!--Partie dédié au configurateur PC-->
+        <div class="container-fluid w-100">
+            <div class="row">
+                <div class="col-lg-6 col-sm" id="compo">
+                    <div id="partie" class="row flex-column container-fluid w-100">
+                        <!--Partie dédié au processeur-->
+                        <div class="btn-group container-fluid">
+                            <button type="button" class="btn btn-light">Le Processeur</button>
+                            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden"></span>
+                          <i class="fas fa-cogs"></i>
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Amd Ryzen 7 2700X</li>
+                                <li><a class="dropdown-item" href="#">Intel core i5 10600K</li>
+                                <li><a class="dropdown-item" href="#"> AMd Ryzen 7 3700X</li>
+                                <li><a class="dropdown-item" href="#">Intel Core i7 10700K</li>
+                                <li><a class="dropdown-item" href="#">Intel Core i9 10900K</li>
+                                <li><a class="dropdown-item" href="#">Amd Ryzen 9 5900X</li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">stock de base</a></li>
+                            </ul>
+                        </div>
+                        <!--Partie dédié à la carte mère-->
+                        <div class="btn-group container-fluid">
+                            <button type="button" class="btn btn-light">La carte mère</button>
+                            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden"></span>
+                          <i class="fas fa-cogs"></i>
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">MSI MAG TOMAHAWK</a></li>
+                                <li><a class="dropdown-item" href="#">ASUS TUF GAMING Z490-PLUS</a></li>
+                                <li><a class="dropdown-item" href="#">msi B450 TOMAHAWK max</a></li>
+                                <li><a class="dropdown-item" href="#">asus rog strix x570-F GAMING</a></li>
+                                <li><a class="dropdown-item" href="#">Asus Rog Maximus XII (Wi-fi)</a></li>
+                                <li><a class="dropdown-item" href="#">gigabyte B550 AORUS pro</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">Stock de base</a></li>
+                            </ul>
+                        </div>
+                        <!--Partie dédié à la mémoire-->
+                        <div class="btn-group container-fluid">
+                            <button type="button" class="btn btn-light">La mémoire</button>
+                            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden"></span>
+                          <i class="fas fa-cogs"></i>
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">ddr4 HyperXFury - 16Go - 3200Mhz</a></li>
+                                <li><a class="dropdown-item" href="#">ddr4 Corsair Vengeance RGb Pro noir - 32Go - 3600mhz</a></li>
+                                <li><a class="dropdown-item" href="#">ddr4 Corsair Dominator Platinium Rgb 32go 4266Mhz</a></li>
+                                <li><a class="dropdown-item" href="#">ddr4 Crucial Ballistix White rgb - 32go 3200mhz</a></li>
+                                <li><a class="dropdown-item" href="#">ddr4 HyperX Predator RGB - 32go 3200mhz</a></li>
+                                <li><a class="dropdown-item" href="#">ddr4 Crucial Ballistix Black Rgb - 64go 3200mhz</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">Stock de base</a></li>
+                            </ul>
+                        </div>
+                        <!--Partie dédié au ventilateur-->
+                        <div class="btn-group container-fluid">
+                            <button type="button" class="btn btn-light">Le ventirad/Watercooling</button>
+                            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden"></span>
+                          <i class="fas fa-cogs"></i>
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Bequiet! Pure Rock Slim</a></li>
+                                <li><a class="dropdown-item" href="#">Enermax Liqmax 3 240 ARGB - 240mm</a></li>
+                                <li><a class="dropdown-item" href="#">Bequiet! Shadow Rock 3 - Noir</a></li>
+                                <li><a class="dropdown-item" href="#">NZXT Kraken x53 - 240mm</a></li>
+                                <li><a class="dropdown-item" href="#">DeepCool Gamer Storm Captain 240Pro v2 - 240 mm</a></li>
+                                <li><a class="dropdown-item" href="#">asus rog RYujin - 360mm</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">stock de base</a></li>
+                            </ul>
+                        </div>
+                        <!--Partie dédié à la carte graphique-->
+                        <div class="btn-group container-fluid">
+                            <button type="button" class="btn btn-light">La carte graphique</button>
+                            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden"></span>
+                          <i class="fas fa-cogs"></i>
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Gigabyte AORUS Radeon RX 5700 XT 8G(amd)</a></li>
+                                <li><a class="dropdown-item" href="#">Asus GeForce RTX 3070 TUF O8G GAMING(nvidia)</a></li>
+                                <li><a class="dropdown-item" href="#">Asus Dual OC Geforce RTX 3060Ti 8Go(nvidia)</a></li>
+                                <li><a class="dropdown-item" href="#">MSI GeForce GTX 1660 Ti GAMING(nvidia)</a></li>
+                                <li><a class="dropdown-item" href="#">MSI GeForce RTX 3090 GAMING X TRIO 24G(nvidia)</a></li>
+                                <li><a class="dropdown-item" href="#">EVGA GeForce RTX 3080 XC3 BLACK GAMING(nvidia)</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">Stock de base</a></li>
+                            </ul>
+                        </div>
+                        <!--Partie dédié au SSD M.2-->
+                        <div class="btn-group container-fluid">
+                            <button type="button" class="btn btn-light">Le SSD M.2</button>
+                            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden"></span>
+                          <i class="fas fa-cogs"></i>
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Samsung Série 980 PRO 1 To (PCIE 4.0)</a></li>
+                                <li><a class="dropdown-item" href="#">Crucial P2 500 Go (PCIE 3.0)</a></li>
+                                <li><a class="dropdown-item" href="#">Western Digital WD Black SN850 500 Go(PCIE 4.0)</a></li>
+                                <li><a class="dropdown-item" href="#">Corsair MP400 2 To (PCIE 3.0)</a></li>
+                                <li><a class="dropdown-item" href="#">Seagate FireCuda 520 2 To (PCIE 4.0)</a></li>
+                                <li><a class="dropdown-item" href="#">Western Digital WD Blue 3D NAND SSD 1 To (SATA 3)</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">Stock de base</a></li>
+                            </ul>
+                        </div>
+                        <!--Partie dédié au SSD SATA III-->
+                        <div class="btn-group container-fluid">
+                            <button type="button" class="btn btn-light">Le SSD SATA III (2.5')</button>
+                            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden"></span>
+                          <i class="fas fa-cogs"></i>
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Samsung Série 860 PRO 1 To</a></li>
+                                <li><a class="dropdown-item" href="#">Western Digital WD Blue 3D NAND SSD 250 Go</a></li>
+                                <li><a class="dropdown-item" href="#">SanDisk SSD PLUS TLC 2 To</a></li>
+                                <li><a class="dropdown-item" href="#">Crucial MX500 2 To</a></li>
+                                <li><a class="dropdown-item" href="#">Crucial BX500 480 Go</a></li>
+                                <li><a class="dropdown-item" href="#">Seagate BarraCuda 120 1 To</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">Stock de base</a></li>
+                            </ul>
+                        </div>
+                        <!--Partie dédié au disque dur 3.5-->
+                        <div class="btn-group container-fluid">
+                            <button type="button" class="btn btn-light">Le disque dur ( 3.5' HDD)</button>
+                            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden"></span>
+                          <i class="fas fa-cogs"></i>
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Seagate BarraCuda 1 To</a></li>
+                                <li><a class="dropdown-item" href="#">Western Digital WD Black 500 Go</a></li>
+                                <li><a class="dropdown-item" href="#">Seagate BarraCuda 2 To</a></li>
+                                <li><a class="dropdown-item" href="#">Seagate IronWolf Pro 14 To</a></li>
+                                <li><a class="dropdown-item" href="#">Western Digital Ultrastar DC HC310 4 To</a></li>
+                                <li><a class="dropdown-item" href="#">Western Digital WD Blue 4 To</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">Stock de base</a></li>
+                            </ul>
+                        </div>
+                        <!--Partie dédié aux cartes d'extensions-->
+                        <div class="btn-group container-fluid">
+                            <button type="button" class="btn btn-light">Les Cartes d'extension</button>
+                            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden"></span>
+                          <i class="fas fa-cogs"></i>
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Asus XG-C100CF</a></li>
+                                <li><a class="dropdown-item" href="#">Carte contrôleur USB 3.0 - PCI-Express </a></li>
+                                <li><a class="dropdown-item" href="#">TP-Link Archer TX3000E</a></li>
+                                <li><a class="dropdown-item" href="#">Carte contrôleur M.2 NVMe - 1 port - PCI-Express</a></li>
+                                <li><a class="dropdown-item" href="#">Elgato Game Capture 4K60 Pro MK.2</a></li>
+                                <li><a class="dropdown-item" href="#">Carte contrôleur M.2 - PCI-Express - 3 ports</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">Stock de base</a></li>
+                            </ul>
+                        </div>
+                        <!--Partie dédié au boitier-->
+                        <div class="btn-group container-fluid">
+                            <button type="button" class="btn btn-light">Le Boitier</button>
+                            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden"></span>
+                          <i class="fas fa-cogs"></i>
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Corsair Obsidian 500D RGB SE Premium - Noir</a></li>
+                                <li><a class="dropdown-item" href="#">NZXT H710 - Noir mat/Rouge</a></li>
+                                <li><a class="dropdown-item" href="#">Corsair Crystal Series 680X RGB Tempered Glass - Blanc</a></li>
+                                <li><a class="dropdown-item" href="#">Phanteks Enthoo Pro M Tempered Glass - Satin Black</a></li>
+                                <li><a class="dropdown-item" href="#">Asus ROG Strix Helios</a></li>
+                                <li><a class="dropdown-item" href="#">Be Quiet! Silent Base 802 Window - Noir</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">Stock de base</a></li>
+                            </ul>
+                        </div>
+                        <!--Partie dédié à l'alimentation-->
+                        <div class="btn-group container-fluid">
+                            <button type="button" class="btn btn-light">L'alimentation</button>
+                            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden"></span>
+                          <i class="fas fa-cogs"></i>
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Asus TUF Gaming 650B - 650W</a></li>
+                                <li><a class="dropdown-item" href="#">Corsair HX850 - 850W</a></li>
+                                <li><a class="dropdown-item" href="#">Be Quiet! Straight Power 11 Platinum - 650W</a></li>
+                                <li><a class="dropdown-item" href="#">Corsair TX750M - 750W</a></li>
+                                <li><a class="dropdown-item" href="#">Corsair RM850x Blanc - 850W</a></li>
+                                <li><a class="dropdown-item" href="#">Asus ROG THOR - 1200W</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">Stock de base</a></li>
+                            </ul>
+                        </div>
+                        <!--Partie dédié à la version de l'OS-->
+                        <div class="btn-group container-fluid">
+                            <button type="button" class="btn btn-light">La version de Windows</button>
+                            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden"></span>
+                          <i class="fas fa-cogs"></i>
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Microsoft Windows 10 Famille - OEM (DVD)</a></li>
+                                <li><a class="dropdown-item" href="#">Microsoft Windows 10 Professionnel - 64bits (DVD)</a></li>
+                                <li><a class="dropdown-item" href="#">Microsoft Windows 10 Famille (clé usb)</a></li>
+                                <li><a class="dropdown-item" href="#">Microsoft Windows 10 Professionnel 64bits (clé usb)</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">Stock de base</a></li>
+                            </ul>
+                        </div>
+                        <!--Partie dédié à l'écran-->
+                        <div class="btn-group container-fluid">
+                            <button type="button" class="btn btn-light">L'écran</button>
+                            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden"></span>
+                          <i class="fas fa-cogs"></i>
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Alienware AW2521HF Adaptive-Sync</a></li>
+                                <li><a class="dropdown-item" href="#">Asus TUF VG279QM G-Sync</a></li>
+                                <li><a class="dropdown-item" href="#">Samsung C24RG50FQUXEN FreeSync</a></li>
+                                <li><a class="dropdown-item" href="#">Gigabyte M27Q Adaptive Sync</a></li>
+                                <li><a class="dropdown-item" href="#">Acer Predator X27P G-Sync Ultimate</a></li>
+                                <li><a class="dropdown-item" href="#">ASUS ROG Strix XG27UQ Adaptive-Sync</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">Stock de base</a></li>
+                            </ul>
+                        </div>
+                        <!--Partie dédié au clavier/souris-->
+                        <div class="btn-group container-fluid">
+                            <button type="button" class="btn btn-light">Le clavier+souris (offerte)</button>
+                            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden"></span>
+                          <i class="fas fa-cogs"></i>
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Asus Cerberus (AZERTY) + Cerberus Mouse</a></li>
+                                <li><a class="dropdown-item" href="#">Logitech G915 Lightspeed Carbone(AZERTY) + G502</a></li>
+                                <li><a class="dropdown-item" href="#">Corsair K100 (Cherry MX Speed)+ Corsair  Scimitar</a></li>
+                                <li><a class="dropdown-item" href="#">Logitech G213 Prodigy + G502</a></li>
+                                <li><a class="dropdown-item" href="#">Corsair K65 Lux RGB - Noir + Corsair GAMING Elite</a></li>
+                                <li><a class="dropdown-item" href="#">ASUS TUF Gaming K1 (AZERTY)+ asus Tuf M3, RGb</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">Stock de base</a></li>
+                            </ul>
+                        </div>
+                        <!--Partie dédié au micro/casque-->
+                        <div class="btn-group container-fluid">
+                            <button type="button" class="btn btn-light">Le Micro/casque</button>
+                            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden"></span>
+                          <i class="fas fa-cogs"></i>
+                        </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Astro A40</a></li>
+                                <li><a class="dropdown-item" href="#">Logitech Pro X Wireless Lightspeed</a></li>
+                                <li><a class="dropdown-item" href="#">Corsair HS70 PRo Wireless - Carbone</a></li>
+                                <li><a class="dropdown-item" href="#">Asus ROG Delta Core</a></li>
+                                <li><a class="dropdown-item" href="#">Steelseries Artics 3 - Noir (2019 edition)</a></li>
+                                <li><a class="dropdown-item" href="#">Astro A40 + MixAmp Pro</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">Stock de base</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="partie">
+
+                    </div>
+                    <div class="col-lg-auto"></div>
+
+                </div>
+                <div class="col col-sm row justify-content-md-center container-fluid" id="prix_payer">
+                    <div class="container-fluid w-100" id="total">
+                        <div class="row flex-column align-center">
+                            <h3 class="text-center display-4">Prix total</h3>
+                            <p class="text-center">Pas encore disponible<br>car j'attends ta config <i class="far fa-smile-wink"></i></p>
+                        </div>
+                    </div>
+                    <div class="container-fluid" id="stock">
+                        <div class=" row flex align-center">
+                            <span class="text-center"><i class="far fa-circle"></i>Disponibilité immédiate</span>
+                            <span class="text-center"><i class="far fa-circle"></i>En cours de réaprovisionnement</span>
+                            <span class="text-center"><i class="far fa-circle"></i>Indisponible</span>
+                        </div>
+                    </div>
+                    <div class="container-fluid" id="livraison"></div>
+                    <div class="row flex-column align-center" id="ups">
+                        <h3 class="text-center display-5">Livraison</h3>
+                        <div>
+                            <input type="checkbox" class="form-check-input" id="livraison1" name="livraison standard" checked>
+                            <label for="Livraison standard">Livraison standard</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="form-check-input" id="livraison2" name="livraison express" checked>
+                            <label for="Livraison express">Livraison express</label>
+                        </div>
+                        <button type="submit" class="btn btn-success text-center" id="valider">valider</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!----------- Footer ------------>
+    <footer class="footer-bs ">
+        <div class="container-fluid marque_footer w-100 ">
+            <div class="row justify-content-md-center image_footer  fadeInLeft">
+                <figure class="col">
+                    <a href="https://www.corsair.com/fr/fr/gaming">
+                        <img src="img_compressé/corsair.png " width="221px " height="56px " class="img-fluid" alt="Responsive-image">
+                    </a>
+                </figure>
+                <figure class="col">
+                    <a href="https://rog.asus.com/fr/">
+                        <img src="img_compressé/Rog logo.png " width="100px " height="100px " class="img-fluid" alt="Responsive-image">
+                    </a>
+                </figure>
+                <figure class="col">
+                    <a href="https://www.nvidia.com/fr-fr/geforce/graphics-cards/30-series/">
+                        <img src="img_compressé/rtx.png " width="178px " height="72px " class="img-fluid" alt="Responsive-image">
+                    </a>
+                </figure>
+                <figure class="col">
+                    <a href="https://www.astrogaming.com/fr-fr">
+                        <img src="img_compressé/astro.png " width="250px " height="66px " class="img-fluid" alt="Responsive-image">
+                    </a>
+                </figure>
+                <figure class="col">
+                    <a href="https://www.ekwb.com/">
+                        <img src="img_compressé/EK-Logo-New.png " width="117px " height="59px " class="img-fluid" alt="Responsive-image">
+                    </a>
+                </figure>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-3 footer-brand animated fadeInLeft ">
+                <img src="img_compressé/logo-de-site4.png " width="50% " alt="logo de l 'entreprise">
+                <p>Game-on c'est une entreprise locale dédiée au gaming, chez nous on joue, on gagne des lots, on passe un super moment. Bref, saute le pas, on t'attend avec impatience.</p>
+            </div>
+            <div class="col-md-4 footer-nav animated fadeInUp">
+                <h4>Menu </h4>
+                <div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="index.html">ACCUEIL</a></li>
+                        <li><a href="A propos.html">A PROPOS</a></li>
+                        <li><a href="compétitions.html">COMPETITIONS</a></li>
+                        <li><a href="configurations.html">CONFIGURATION</a></li>
+                        <li><a href="configurateur.html">CONFIGURATEUR</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="Mentions Légales.html">MENTIONS LEGALES</a></li>
+                        <li><a href="plan du site.html">PLAN DU SITE</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 footer-social animated fadeInDown">
+                <h4>Nous suivre</h4>
+                <ul>
+                    <li><a href="https://tinyurl.com/y4qqtc3k">Facebook</a></li>
+                    <li><a href="https://tinyurl.com/yxnow8kd">Twitter</a></li>
+                    <li><a href="https://tinyurl.com/y4hy82cc">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-ns animated fadeInRight">
+                <h4>Newsletter</h4>
+                <p>Vous en reprendrez bien une petite dose</p><br>
+                <p>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Votre e-mail....">
+                        <span class="input-group-btn">
+                        <button class="btn bg-white btn-default" type="button"><span class="fas fa-power-off"></span></button>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+    // Google Analytics
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject '] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script ', '//www.google-analytics.com/analytics.js ', 'ga ');
+    ga('create ', 'UA-52759236-1 ', 'auto ');
+    ga('send ', 'pageview ');
+    ga('set ', '&uid ', 'UA-52759236-1 ');
+</script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js '></script>
+<script src='js/script.js '></script>
+<script src="competitions.js"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+</html>

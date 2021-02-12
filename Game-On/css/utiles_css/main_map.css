@@ -1,0 +1,19 @@
+#contenu {
+    color: #ffff;
+}
+
+#contenu li a {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffff;
+}
+
+#contenu ul {
+    font-size: 40px;
+    list-style-type: none;
+}
+
+#contenu a:hover {
+    color: green;
+    cursor: progress;
+}

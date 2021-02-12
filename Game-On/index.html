@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<link rel="shortcut icon" type="image/png" href="imgicon/icongameon.png"/>
+
+
+<head>
+    <title>Game-on</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/svg" href="/img_compressé/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index_css/main.css">
+    <link rel="stylesheet" href="./css/index_css/style2.css">
+
+</head>
+
+
+
+
+<body>
+
+
+
+
+    <header>
+        <a href="index.html">
+             <img src="img_compressé/logo-de-site4.png" alt="logo de l'entreprise" id="logo_ent">
+        </a>
+        <img class="timlogo" src="img_compressé/game-on.png" width="50%" alt="logo de Game-on">
+        <div class="nav-modal">
+            <div class="blob"></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="A propos.html">A PROPOS</a></li>
+                    <li><a href="compétitions.html">COMPETITIONS</a></li>
+                    <li><a href="configurations.html">CONFIGURATION</a></li>
+                    <li><a href="configurateur.html">CONFIGURATEUR</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="Mentions Légales.html">MENTIONS LEGALES</a></li>
+                    <li><a href="plan du site.html">PLAN DU SITE</a></li>
+                    <li><a href="mon_compte.html">MON COMPTE</a></li>
+                    <li>
+                        <form class="searchbox">
+                            <input type="search" placeholder="Rechercher...." name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+                            <input type="submit" class="searchbox-submit">
+                            <span class="searchbox-icon"><i class="fas fa-search-plus" aria-hidden="true"></i></span>
+                        </form>
+                        </i>
+                        </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="head">
+            <a href="https://tinyurl.com/y4hy82cc" class="tile socialmedia"><i class="fab fa-instagram"></i></a>
+            <a href="https://tinyurl.com/y4qqtc3k" class="tile socialmedia"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div class="tile burger">
+            <div class="meat">
+                <div class="line one"></div>
+                <div class="line two"></div>
+                <div class="line three"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--Partie dédié au compteur auto en JS-->
+        <div id="global" class="w-100">
+            <div id="counter" class="row justify-content-md-center">13000</div>
+            <p id="game_played" class="row align-items-end">Parties jouées</p>
+        </div>
+
+        <div class="container py-5 w-100">
+
+
+
+            <div class="p-5 bg-transparent shadow sm-5 " id="tree_part">
+                <!-- Rounded tabs -->
+                <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-md-row text-center bg-light border-0 rounded-nav">
+                    <li class="nav-item flex-sm-fill">
+                        <a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold active">Championnat du mois</a>
+                    </li>
+                    <li class="nav-item flex-sm-fill">
+                        <a id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Tops configs</a>
+                    </li>
+                    <li class="nav-item flex-sm-fill">
+                        <a id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Actualités</a>
+                    </li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div id="home" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-4 py-5 show active">
+                        <p class="text-white">Un grand bravo à Jordan pour avoir remporté un superbe siège Gaming de la marque Noblechair. Il a tout simplement survolé au dessus de ces concurrents.</p>
+                        <p class="text-white mb-0">Du coup, comme le prix de la semaine à été remporté , notre nouvelle récompense est <a href="https://shop.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-black-an1500-nvme-ssd/gallery/wd-black-an1500-nvme-ssd.png.thumb.1280.1280.png">prête</a>.<br> Alors
+                            qui est prêt à passer une grosse semaine , surtout que le 10/12/2020 sort l'excellent Cyperpunk 2077.<br> Nos PC sont déjà équipé des toutes dernières cartes graphiques pour en profiter en 8K.<br> Alors tu nous rejoins quand ? </p>
+                        <button class="btn btn-success  menu_mid" type="button"><a href="mon_compte.html">S'inscrire à la prochaine compétition</a></button>
+
+                    </div>
+
+                    <div id="profile" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-4 py-5">
+                        <p class="text-white">On a d'excellentes configs chez nous , si tu veux, tu peux faire comme Skyrroz, nous la commander, on s'occupe de tout, même de t'installer les jeux si tu veux.</p>
+                        <p class="text-white mb-0">La dernière config est celle de Tonymerguez (Eh oui) avec un gros i9 10900K et une RTX 3090 strix.<br>Pour le reste on te laisse aller voir dans notre page dédié.</p>
+                        <button class="btn btn-success menu_mid" type="button"><a href="configurations.html">Je veux voir</a></button>
+                    </div>
+                    <div id="contact" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
+                        <p class="text-white">Pour aller encore plus loin bientôt, on te proposera un compte pour que tu puisses tout gérer.</p>
+                        <p class="text-white">Voir toutes tes stats, réserver un menu a l'avance, ou encore voir si la pièce de ton pc que tu nous a commandé est enfin disponible.<br>Si jamais tu veux dès maintenant réserver une place ou encore discuter avec le
+                            SAV, promis on te réponds le plus vite possible.</p>
+                        <button class="btn btn-success  menu_mid" type="button"><a href="contact.html">J'ai une question</a></button>
+                    </div>
+                </div>
+                <!-- End rounded tabs -->
+            </div>
+
+
+
+
+            <!-- End lined tabs -->
+
+
+    </main>
+    <!-- START Bootstrap-Cookie-Alert -->
+    <div class="alert text-center cookiealert" role="alert">
+        <b>Vous aimez les cookies ? </b> &#x1F36A;Nous non plus, mais on en a besoin pour le site UNIQUEMENT <a href="https://onatestepourtoi.com/politique-de-cookies-eu" target="_blank">En savoir plus</a>
+
+        <button type="button" class="btn btn-success btn-sm acceptcookies">
+        J'accepte
+        </button>
+        <button type="button" class="btn btn-danger btn-sm acceptcookies">
+        Je refuse
+        </button>
+    </div>
+    <!-- END Bootstrap-Cookie-Alert -->
+
+    <!----------- Footer ------------>
+    <footer class="footer-bs ">
+        <div class="container-fluid marque_footer w-100 ">
+            <div class="row justify-content-md-center image_footer  fadeInLeft">
+                <figure class="col">
+                    <a href="https://www.corsair.com/fr/fr/gaming">
+                        <img src="img_compressé/corsair.png " width="221px " height="56px " class="img-fluid" alt="Responsive-image">
+                    </a>
+                </figure>
+                <figure class="col">
+                    <a href="https://rog.asus.com/fr/">
+                        <img src="img_compressé/Rog logo.png " width="100px " height="100px " class="img-fluid" alt="Responsive-image">
+                    </a>
+                </figure>
+                <figure class="col">
+                    <a href="https://www.nvidia.com/fr-fr/geforce/graphics-cards/30-series/">
+                        <img src="img_compressé/rtx.png " width="178px " height="72px " class="img-fluid" alt="Responsive-image">
+                    </a>
+                </figure>
+                <figure class="col">
+                    <a href="https://www.astrogaming.com/fr-fr">
+                        <img src="img_compressé/astro.png " width="250px " height="66px " class="img-fluid" alt="Responsive-image">
+                    </a>
+                </figure>
+                <figure class="col">
+                    <a href="https://www.ekwb.com/">
+                        <img src="img_compressé/EK-Logo-New.png " width="117px " height="59px " class="img-fluid" alt="Responsive-image">
+                    </a>
+                </figure>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-3 footer-brand animated fadeInLeft ">
+                <a href="index.html">
+                    <img src="img_compressé/logo-de-site4.png " width="50% " alt="logo de l 'entreprise">
+                </a>
+                <p>Game-on c'est une entreprise locale dédiée au gaming, chez nous on joue, on gagne des lots, on passe un super moment. Bref, saute le pas, on t'attend avec impatience.</p>
+            </div>
+            <div class="col-md-4 footer-nav animated fadeInUp">
+                <h4>Menu </h4>
+                <div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="index.html">ACCUEIL</a></li>
+                        <li><a href="A propos.html">A PROPOS</a></li>
+                        <li><a href="compétitions.html">COMPETITIONS</a></li>
+                        <li><a href="configurations.html">CONFIGURATION</a></li>
+                        <li><a href="configurateur.html">CONFIGURATEUR</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="Mentions Légales.html">MENTIONS LEGALES</a></li>
+                        <li><a href="plan du site.html">PLAN DU SITE</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 footer-social animated fadeInDown">
+                <h4>Nous suivre</h4>
+                <ul>
+                    <li><a href="https://tinyurl.com/y4qqtc3k">Facebook</a></li>
+                    <li><a href="https://tinyurl.com/yxnow8kd">Twitter</a></li>
+                    <li><a href="https://tinyurl.com/y4hy82cc">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-ns animated fadeInRight">
+                <h4>Newsletter</h4>
+                <p>Vous en reprendrez bien une petite dose</p><br>
+                <p>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Votre e-mail....">
+                        <span class="input-group-btn">
+                        <button class="btn bg-white btn-default" type="button"><span class="fas fa-power-off"></span></button>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+    <!-- Only for the demo -->
+    <script>
+        for (var i = 1; i <= 150; i++)
+            document.querySelector("#fillme").innerHTML += "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ";
+    </script>
+
+    <!-- Include cookiealert script -->
+    <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js">
+    </script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        // Google Analytics
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-52759236-1', 'auto');
+        ga('send', 'pageview');
+        ga('set', '&uid', 'UA-52759236-1');
+    </script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script>
+        for (var i = 1; i <= 150; i++)
+            document.querySelector("#fillme").innerHTML += "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ";
+    </script>
+    <script src='js/script.js'></script>
+
+
+
+
+
+
+
+</body>
+
+
+</html>
